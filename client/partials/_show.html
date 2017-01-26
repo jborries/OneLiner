@@ -1,0 +1,13 @@
+<h3>Show Friends</h3>
+<br>
+
+<div ng-init = "showCustomer()" >
+    <p>First Name: {{customer.first_name}}</p>
+    <p>Last Name: {{customer.last_name}}</p>
+    <p>Birthday: {{customer.birthday | date: "MMM. dd, yyyy"}}</p>
+    <p>Created On: {{customer.created_at | date: "MMM. dd, yyyy"}}</p>
+</div>
+<br>
+<h4>User Has Been Added</h4>
+<br>
+<a href= "#!/"><h3>Back</h3></a>

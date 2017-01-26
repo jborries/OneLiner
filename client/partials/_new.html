@@ -1,0 +1,21 @@
+
+<h2>Add New Friend</h2>
+
+<form ng-submit="createCustomer()">
+    <div>
+        <label for="firstName">First Name</label>
+        <p><input type="text" id="customerName" ng-model="newCustomer.first_name"></p>
+
+        <label for="lastName">Last Name</label>
+        <p><input type="text" id="customerName" ng-model="newCustomer.last_name"></p>
+
+        <label for="birthday">Birthday</label>
+        <p><input type="date" id="customerName"
+        ng-model="newCustomer.birthday"><p>
+    </div>
+    <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    <br>
+    <br>
+        <a href="#!/"><h4>Back</h4></a>
+</form>
