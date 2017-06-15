@@ -12,7 +12,7 @@
     <label for="description">Description</label>
     <p><input type="text" id="customerName" ng-model="customer.description"></p>
 
-    <label for="birthday">Change current Asset Installed Date from {{customer.birthday | date: "MMM. dd, yyyy"}} to:</label>
+    <label for="birthday">Change current Asset Installed Date from <span style="color:red;">{{customer.birthday | date: "MMM. dd, yyyy"}}</span> to:</label>
     <p><input type="date" id="customerName" ng-model = "customer.birthday"></p>
 
 <a href="#!/"><h4>Back</h4></a>
