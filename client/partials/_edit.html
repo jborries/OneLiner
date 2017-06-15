@@ -1,18 +1,19 @@
-<h2>Edit Friend</h2>
+<h2>Edit Asset</h2>
 
 <div ng-init = "showCustomer()">
 
 <form ng-submit="updateCustomer()" method = "post" >
-    <label for="firstName">First Name</label>
+    <label for="firstName">Asset Name</label>
     <p><input type="text"  id="customerName" ng-model = "customer.first_name"></p>
 
-    <label for="lastName">Last Name</label>
+    <label for="lastName">Project Name</label>
     <p><input type="text"  id="customerName" ng-model="customer.last_name"></p>
 
-    <label for="birthday">Change current birthday from {{customer.birthday | date: "MMM. dd, yyyy"}} to:</label>
-    <p><input type="date" id="customerName" ng-model = "customer.birthday"></p>
+    <label for="description">Description</label>
+    <p><input type="text" id="customerName" ng-model="customer.description"></p>
 
-<button type="submit" class="btn btn-primary">Submit</button>
+    <label for="birthday">Change current Asset Installed Date from {{customer.birthday | date: "MMM. dd, yyyy"}} to:</label>
+    <p><input type="date" id="customerName" ng-model = "customer.birthday"></p>
 
 <a href="#!/"><h4>Back</h4></a>
 

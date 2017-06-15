@@ -3,17 +3,19 @@
       <table class="table table-hover customer">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Show</th>
-            <th>Update</th>
-            <th>Delete</th>
+            <th>Asset Name</th>
+            <th>Asset Project</th>
+            <th>Asset Details</th>
+            <th>Update Asset</th>
+            <th>Delete Asset</th>
 
           </tr>
         </thead>
         <tbody>
           <tr ng-repeat='customer in customers'>
-            <td>{{customer.first_name}} {{customer.last_name}}</td>
-            <td><a ng-href="#!/show/{{customer._id}}">Show</a></td>
+            <td>{{customer.first_name}}</td>
+            <td>{{customer.last_name}}</td>
+            <td><a ng-href="#!/show/{{customer._id}}">Details</a></td>
             <td><a ng-href="#!/edit/{{customer._id}}">Edit</a></td>
             <td><button class='btn btn-danger' ng-click="deleteCustomer(customer._id)">Delete</button></td>
           </tr>
@@ -21,4 +23,4 @@
       </table>
     </div>
 
-    <a href = "#!/new"><h4>Add Friends</h4></a>
+    <a href = "#!/new"><h4>Add New Asset</h4></a>

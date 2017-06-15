@@ -1,13 +1,19 @@
-<h3>Show Friends</h3>
+<h3>Asset Details</h3>
 <br>
 
 <div ng-init = "showCustomer()" >
-    <p>First Name: {{customer.first_name}}</p>
+    <p>Asset Name: {{customer.first_name}}</p>
     <p>Last Name: {{customer.last_name}}</p>
-    <p>Birthday: {{customer.birthday | date: "MMM. dd, yyyy"}}</p>
-    <p>Created On: {{customer.created_at | date: "MMM. dd, yyyy"}}</p>
+    <p>Asset Description: {{customer.description}}</p>
+    <p>Asset installed on: {{customer.birthday | date: "MMM. dd, yyyy"}}</p>
+    <p>Record Created On: {{customer.created_at | date: "MMM. dd, yyyy"}}</p>
+    <p>Asset attachments</p>
+    {{customer.image}}
+    <br>
+    <br>
+    <br>
 </div>
 <br>
-<h4>User Has Been Added</h4>
+<h4>Asset Has Been Added</h4>
 <br>
 <a href= "#!/"><h3>Back</h3></a>

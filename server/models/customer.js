@@ -32,6 +32,7 @@ var mongoose = require('mongoose'),
 var CustomerSchema = new Schema({
   first_name: {type: String, validate: first_nameValidator},
   last_name: {type: String, validate: last_nameValidator},
+  description: {type: String},
   birthday: { type: Date },
   created_at: { type: Date, default: Date.now() }
 });
